@@ -5,11 +5,11 @@
 $query = "SELECT * FROM authors ";
 $result = mysqli_query($connection, $query);
 echo "<br>";
-?> 
+?>
 <table border="2" cellpadding="5" cellspacing="4">
     <tr><td>ID</td><td>Celé Jméno</td></tr> <?php
     while ($row = mysqli_fetch_assoc($result)) {
-        ?> <tr><th> <?php echo $row['id_author'] . ". "; ?> </th><th> <?php echo $row['name']; ?> </th></tr> <?php
+        ?> <tr><th> <?php echo $row['id_author'] . ". "; ?> </th><th> <?php echo $row['author_name']; ?> </th></tr> <?php
     }
     ?>
 </table>
